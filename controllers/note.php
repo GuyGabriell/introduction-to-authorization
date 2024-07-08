@@ -12,6 +12,8 @@ $currentUserId = 1;
 
 //dd($_GET['id']);
 
+//all this is what is responsible for fetching a note from the database and authorizing it.
+
 $note = $db->query('select * from notes where id = :id', ['id' => $_GET['id']])->fetch();
 
 //Authorization-status-codes-and-magic-numbers
