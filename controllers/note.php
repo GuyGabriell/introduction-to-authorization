@@ -5,7 +5,7 @@ $config = require('config.php');
   
 $db = new Database($config['database']);
 
-$heading = 'Notes';
+$heading = 'Note';
 
 $currentUserId = 1;
 
